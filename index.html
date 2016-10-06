@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DLT</title>
+<link rel="shortcut icon" href="resimler/icon.png" >
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+$(function(){
+	$("img[name=menu2]").hide();
+	$(".menu-ici").hide();
+	$("img[name=menu]").click(function(){
+		$("img[name=menu]").hide();
+		$("img[name=menu2]").show();
+		$(".menu-ici").show();
+		});
+		$("img[name=menu2]").click(function(){
+		$("img[name=menu]").show();
+		$("img[name=menu2]").hide();
+		$(".menu-ici").hide();
+		$("img[name=diger2]").hide();
+		$("img[name=diger1]").show();
+		});
+		$(".diger-menu").hide();
+		$("img[name=diger2]").hide();
+	    $("img[name=diger1]").click(function(){
+		$("img[name=diger1]").hide();
+		$("img[name=diger2]").show();
+		$(".diger-menu").show();
+		
+		});
+		$("img[name=diger2]").click(function(){
+		$("img[name=diger1]").show();
+		$("img[name=diger2]").hide();
+		$(".diger-menu").hide();
+		});
+	});
+</script>
+<div id="a"></div>
+<style>
+body {padding:0px;
+background:#FFF;
+margin:0px;}
+#boyut {
+	width:80%;
+	cursor:pointer;
+	}
+	#boyut2 {
+		cursor:pointer;
+	width:50%;}
+.table {width:100%;
+}
+.table td {width:50%;
+height:100%;}
+.anadiv {background:#333;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+height:800px;
+}
+.menu {background:#FFF;
+color:#666;
+border:1px solid #666;
+width:20%;
+text-align:center;
+padding-bottom:5px;
+font-size:90%;
+margin-left:170px;
+padding-top:5px;}
+#boyut3 {width:31.7%;cursor:pointer;}	
+</style>
+</head>
+<body>
+<table align="center"  class="table" cellpadding="0"  cellspacing="0"><tr><td valign="top" ><table align="center"   width="100%" cellpadding="0" cellspacing="0"  >
+<tr><td align="center"> <img  src="resimler/Untitled-1.png" id="boyut2" />  </td></tr>
+<tr><td valign="middle"  align="center"  width="50%" ><table cellpadding="0"   cellspacing="0" width="50%"><tr><td>
+<img src="resimler/Untitled-3.png" id="boyut3" name="menu" />
+<img src="resimler/Untitled-3-2.png" id="boyut3" name="menu2" /></td></tr>
+</table>
+</td></tr>
+<tr><td >
+<table align="center" width="50%"  cellpadding="0"   cellspacing="0" class="menu-ici" ><tr><td valign="left"></td></tr>
+<tr><td valign="left"><a href="index.html"><img src="resimler/Untitled-5.png" id="boyut3" /></a><img src="resimler/Untitled-8.png" id="boyut3" name="diger1"/><img src="resimler/Untitled-7.png" id="boyut3" name="diger2"/></td></tr>
+<tr><td cellpadding="0"  cellspacing="0" class="diger-menu">  <img src="resimler/Untitled-10.png" id="boyut3" /><img src="resimler/Untitled-9.png" id="boyut3"/> </table></td></tr>
+</td></tr>
+</table>
+</td><td>
+<img  src="resimler/Untitled-2.png" id="boyut"/>
+</td>
+</tr>
+</table>
+<div class="anadiv">
+</div>
+</body>
+</html>
