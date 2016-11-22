@@ -1,96 +1,89 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<HTML>
+<HEAD>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>DLT</title>
-<link rel="shortcut icon" href="resimler/icon.png" >
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script>
-$(function(){
-	$("img[name=menu2]").hide();
-	$(".menu-ici").hide();
-	$("img[name=menu]").click(function(){
-		$("img[name=menu]").hide();
-		$("img[name=menu2]").show();
-		$(".menu-ici").show();
-		});
-		$("img[name=menu2]").click(function(){
-		$("img[name=menu]").show();
-		$("img[name=menu2]").hide();
-		$(".menu-ici").hide();
-		$("img[name=diger2]").hide();
-		$("img[name=diger1]").show();
-		});
-		$(".diger-menu").hide();
-		$("img[name=diger2]").hide();
-	    $("img[name=diger1]").click(function(){
-		$("img[name=diger1]").hide();
-		$("img[name=diger2]").show();
-		$(".diger-menu").show();
-		
-		});
-		$("img[name=diger2]").click(function(){
-		$("img[name=diger1]").show();
-		$("img[name=diger2]").hide();
-		$(".diger-menu").hide();
-		});
-	});
-</script>
-<div id="a"></div>
+<TITLE>Untitled Document</TITLE>
 <style>
-body {padding:0px;
-background:#FFF;
-margin:0px;}
-#boyut {
-	width:80%;
-	cursor:pointer;
-	}
-	#boyut2 {
-		cursor:pointer;
-	width:50%;}
-.table {width:100%;
-}
-.table td {width:50%;
-height:100%;}
-.anadiv {background:#333;
-width:100%;
+body {margin:0px;
+padding:0px;
+background:#F5F5F5;}
+.menu_alani {width:75%;
+height:10%;
+margin-top:10%;
 margin-left:auto;
 margin-right:auto;
-height:800px;
+background:#FFF;
+box-shadow: 0 2px 4px #999;}
+.orta_resim {width:50%;
+height:%;
+border:4px solid #F2F2F2;
+margin-left:auto;
+margin-right:auto;
+margin-top:10%;}
+.logo {width:15%;
+border-radius:100%;
+height:30%;
+margin-left:5%;
+margin-top:-8%;
+z-index:20px;
+box-shadow: 0 2px 1px #999;
+background:#FFF;
+
+position:absolute;}
+.menu {margin-left:25%;
 }
-.menu {background:#FFF;
-color:#666;
-border:1px solid #666;
-width:20%;
-text-align:center;
-padding-bottom:5px;
+.menu li {list-style-type:none;
+float:left;
+padding-left:4%;
+padding-right:4%;
+padding-bottom:1%;
 font-size:90%;
-margin-left:170px;
-padding-top:5px;}
-#boyut3 {width:31.7%;cursor:pointer;}	
+padding-top:1%;
+margin-left:1%;
+border:1px solid transparent;
+cursor:pointer;
+
+}
+.menu li:hover {
+	color:#019fe1;
+	border-top:1px solid #019fe1;
+	border-bottom:1px solid #019fe1;}
+.ana_baslik {font-size:175%;
+color:#019fe1;
+font-family:Arial, Helvetica, sans-serif;
+position:absolute;
+margin-top:-5%;
+margin-left:46%;}
+.icerik {width:70%;
+height:100%;
+margin-left:auto;
+margin-right:auto;
+border:1px solid  #ccc;}
+.alt_bolum {width:100%;
+height:40%;
+background:#0D121D;
+border-top:8px solid #bbbbbb;
+margin-top:5%;}
+.alt_bolum2 {width:100%;
+height:7%;
+background:#05070B;
+}
 </style>
-</head>
-<body>
-<table align="center"  class="table" cellpadding="0"  cellspacing="0"><tr><td valign="top" ><table align="center"   width="100%" cellpadding="0" cellspacing="0"  >
-<tr><td align="center"> <img  src="resimler/Untitled-1.png" id="boyut2" />  </td></tr>
-<tr><td valign="middle"  align="center"  width="50%" ><table cellpadding="0"   cellspacing="0" width="50%"><tr><td>
-<img src="resimler/Untitled-3.png" id="boyut3" name="menu" />
-<img src="resimler/Untitled-3-2.png" id="boyut3" name="menu2" /></td></tr>
-</table>
-</td></tr>
-<tr><td >
-<table align="center" width="50%"  cellpadding="0"   cellspacing="0" class="menu-ici" ><tr><td valign="left"></td></tr>
-<tr><td valign="left"><a href="index.html"><img src="resimler/Untitled-5.png" id="boyut3" /></a><img src="resimler/Untitled-8.png" id="boyut3" name="diger1"/><img src="resimler/Untitled-7.png" id="boyut3" name="diger2"/></td></tr>
-<tr><td cellpadding="0"  cellspacing="0" class="diger-menu">  <img src="resimler/Untitled-10.png" id="boyut3" /><img src="resimler/Untitled-9.png" id="boyut3"/> </table></td></tr>
-</td></tr>
-</table>
-</td><td>
-<img  src="resimler/Untitled-2.png" id="boyut"/>
-</td>
-</tr>
-</table>
-<div class="anadiv">
-</div>
-</body>
-</html>
+</HEAD>
+<BODY >
+<div class="ana_baslik">Havalandırma Mağazası</div>
+<div class="menu_alani"><div class="logo"><img src="resimler/LOGO.png" width="60%" style="margin-left:19%;margin-top:10%;"/></div><div class="menu">
+
+<ul><br />
+<li>Hakkımızda</li>
+<li>Hizmetler</li>
+<li>Ürünler</li>
+<li>Referanslar</li>
+<li>İletişim</li>
+</ul>
+</div></div>
+<div class="orta_resim"></div>
+<div class="icerik"></div>
+<div class="alt_bolum"></div>
+<div class="alt_bolum2"></div>
+</BODY>
+</HTML>
