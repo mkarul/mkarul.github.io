@@ -83,11 +83,12 @@ height:%;
 margin-left:auto;
 margin-right:auto;
 margin-top:10%;}
-.menu {width:75%;
-height:20%;
-
+.menu {width:80%;
+height:%;
+min-height:10%;
 margin-left:auto;
 margin-right:auto;}
+.menu ul {margin-left:-4.5%;}
 .menu ul li{ list-style-type:none;
 width:20%;
 float:left;
@@ -114,21 +115,40 @@ padding-top:5%;
 font-weight:800;
 color:#666;}
 .metin_1 {color:#666; font-size:100%;padding-left:15%;padding-right:15%; word-spacing:10px;word-wrap:break-word;; }
-@media screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) { }
+.menu ul {margin-left:-8%;}
 .menu ul li{ list-style-type:none;
 width:100%;
 float:none;
 color:#333;
 text-align:center;
+margin-top:2%;
 }
+.icerik_baslik {text-align:center;
+font-size:150%;
+padding-top:5%;
+font-weight:800;
+color:#666;}
+.baslik_logo{width:75%;
+height:%;
+margin-left:auto;
+margin-right:auto;
+margin-top:10%;}
+.icerik {width:80%;
+height:%;
+margin-left:auto;
+margin-top:0%;
+margin-right:auto;
+border:1px solid #999;}
 }
+
 </style>
 </head>
 <body>
 <div class="baslik_logo"><img src="cssdosyalari/resimler/logo2.png" width="100%"></div>
 
 <div class="menu">
-<ul>
+<ul ">
 <li style="color:#86dfe2;border-bottom:1px solid #86dfe2;cursor:pointer" id="ana_sayfa">Anasayfa</li>
 <li style="color:#e75d67;border-bottom:1px solid #e75d67;cursor:pointer" id="muzik">Müzik</li>
 <li style="color:#4ca0c9;border-bottom:1px solid #4ca0c9;cursor:pointer" id="galeri">Galeri</li>
