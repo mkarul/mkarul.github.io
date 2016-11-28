@@ -1,0 +1,106 @@
+
+body {margin:0px;
+background-image:url(resimler/arkaplan.jpg);
+Background-attachment:fixed;
+background-size: 100% 100%;
+padding:0px;
+font-family:Arial, Helvetica, sans-serif;}
+.anadiv {width:100%;
+height:100%;
+margin-left:auto;
+margin-right:auto;}
+.menu_alani {width:100%;
+height:19%;
+
+z-index:10;
+transition:all 2000ms;
+}
+.color_1 {color:#FFF;
+ font-size:250%;   
+font-weight:700;
+letter-spacing: 0.05em;}
+.color_2 {color:#07F791;
+letter-spacing: 0.05em;
+ font-size:250%;
+font-weight:700;}
+.menu {margin:0px;
+height:0px;}
+.menu ul li {list-style-type:none;}
+.menu li {
+	color:#FFF;
+	font-size:90%;
+	font-weight:700;
+	float:left;
+	margin-left:5%;
+	padding-left:2%;
+	padding-right:2%;
+	cursor:pointer;
+    border-left:2px solid #FFF;
+	border-right:2px solid #fff;
+	}
+.menu li:hover { color:#07F791;
+border-left:2px solid #07F791;
+	border-right:2px solid #07F791;}
+.icerik {width:50%;
+height:%;
+margin-left:auto;
+margin-right:auto;
+background:#efefef;
+margin-top:7%;
+}
+.icerik_baslik {text-align:center;
+font-size:300%;
+padding-top:5%;
+font-weight:800;
+color:#666;}
+.tarih_alani {width:45%;
+margin-top:5%;
+margin-left:47%;
+height:35%;}
+.tarih_alani table{ border:8px solid #FFF;}
+.tarih_baslik {color:#FFF;
+font-weight:400;
+letter-spacing:-1px;
+word-spacing: 2px;
+text-align:center;
+font-size:180%;}
+.alt_cizgi {width:0%;
+margin-left:auto;
+margin-right:auto;
+transition:all 750ms;
+border:1px solid transparent;}
+.tarih_bicim {font-size:120%;
+color:#F36;
+text-align:center;
+}
+.tarih_alani:hover  .alt_cizgi{width:70%;transition:all 750ms;border:1px solid #FFF;}
+.sabitle {background:#000;transition:all 2000ms;}
+.sabitle2 {background:none;transition:all 2000ms;}
+.baslik_sabitleme {width:100%;
+height:100%;
+margin-left:auto;icerik_baslik
+
+margin-right:auto;
+position:fixed;
+color:#FF5E62;
+top:0%;
+left:0;
+margin-top:-5%;
+}
+baslik_sabitleme2 {
+	position:!important; }
+
+.galeri_resim_boyutu {width:95%;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:20%;
+}
+.galeri_resim_boyutu img {width:100%;
+}
+.alt_satir {clear:both;}
+
+.metin3 {color:#666;
+line-height:160%;
+padding-left:5%;
+padding-bottom:10%;
+padding-right:5%;}

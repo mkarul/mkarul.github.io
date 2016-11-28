@@ -1,89 +1,163 @@
-<HTML>
-<HEAD>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<TITLE>Untitled Document</TITLE>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Osman Naçi</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+		$(document).scroll(function(){
+    var y=$(document).scrollTop(),
+	header=$(".menu");
+	menn=$("");
+	if (y >= 480) {
+header.addClass('sabitleme');
+menn.addClass('sabitleme2');
+} else {
+header.removeClass('sabitleme');
+menn.removeClass('sabitleme2');
+}
+});
+  $("#icerik_1").show(1000);
+	$("#icerik_2").hide(1000);
+	$("#icerik_3").hide(1000); 
+	$("#icerik_4").hide(1000); 
+	$("#icerik_5").hide(1000); 
+
+$("#ana_sayfa").click(function(){ 
+    $("#icerik_1").slideDown(1000);
+	$("#icerik_2").hide(1000);
+	$("#icerik_3").hide(1000); 
+	$("#icerik_4").hide(1000); 
+	$("#icerik_5").hide(1000); 
+	});
+	$("#muzik").click(function(){ 
+    $("#icerik_1").hide(1000);
+	$("#icerik_2").slideDown(1000);
+	$("#icerik_3").hide(1000); 
+	$("#icerik_4").hide(1000); 
+	$("#icerik_5").hide(1000); 
+	});
+	$("#galeri").click(function(){ 
+    $("#icerik_1").hide(1000);
+	$("#icerik_2").hide(1000);
+	$("#icerik_3").slideDown(1000); 
+	$("#icerik_4").hide(1000); 
+	$("#icerik_5").hide(1000); 
+	});
+	$("#organize").click(function(){ 
+    $("#icerik_1").hide(1000);
+	$("#icerik_2").hide(1000);
+	$("#icerik_3").hide(1000); 
+	$("#icerik_4").slideDown(1000); 
+	$("#icerik_5").hide(1000); 
+	});
+	$("#hakk").click(function(){ 
+    $("#icerik_1").hide(1000);
+	$("#icerik_2").hide(1000);
+	$("#icerik_3").hide(1000); 
+	$("#icerik_4").hide(1000); 
+	$("#icerik_5").slideDown(1000); 
+	})
+
+
+
+
+	});
+		</script>
 <style>
-body {margin:0px;
-padding:0px;
-background:#F5F5F5;}
-.menu_alani {width:75%;
-height:10%;
-margin-top:10%;
+.sabitleme {
+position:fixed;
 margin-left:auto;
 margin-right:auto;
-background:#FFF;
-box-shadow: 0 2px 4px #999;}
-.orta_resim {width:50%;
+top:-5%;
+left:22.5%;
+background-image:url(cssdosyalari/resimler/pattern2.png);}
+.sabitleme2 {position:!important;}
+body {background-image:url(cssdosyalari/resimler/pattern2.png);
+font-family:Arial, Helvetica, sans-serif;
+margin:0px;
+padding:0px;}
+.baslik_logo{width:40%;
 height:%;
-border:4px solid #F2F2F2;
 margin-left:auto;
 margin-right:auto;
 margin-top:10%;}
-.logo {width:15%;
-border-radius:100%;
-height:30%;
-margin-left:5%;
-margin-top:-8%;
-z-index:20px;
-box-shadow: 0 2px 1px #999;
-background:#FFF;
+.menu {width:75%;
+height:20%;
 
-position:absolute;}
-.menu {margin-left:25%;
-}
-.menu li {list-style-type:none;
-float:left;
-padding-left:4%;
-padding-right:4%;
-padding-bottom:1%;
-font-size:90%;
-padding-top:1%;
-margin-left:1%;
-border:1px solid transparent;
-cursor:pointer;
-
-}
-.menu li:hover {
-	color:#019fe1;
-	border-top:1px solid #019fe1;
-	border-bottom:1px solid #019fe1;}
-.ana_baslik {font-size:175%;
-color:#019fe1;
-font-family:Arial, Helvetica, sans-serif;
-position:absolute;
-margin-top:-5%;
-margin-left:46%;}
-.icerik {width:70%;
-height:100%;
 margin-left:auto;
+margin-right:auto;}
+.menu ul li{ list-style-type:none;
+width:20%;
+float:left;
+border-bottom:1px solid black;
+color:#333;
+text-align:center;
+}
+
+.icerik {width:80%;
+height:%;
+margin-left:auto;
+margin-top:10%;
 margin-right:auto;
-border:1px solid  #ccc;}
+border:1px solid #999;}
 .alt_bolum {width:100%;
 height:40%;
-background:#0D121D;
-border-top:8px solid #bbbbbb;
-margin-top:5%;}
-.alt_bolum2 {width:100%;
-height:7%;
-background:#05070B;
+margin-top:5%;
+border-top:7px solid #CCC;
+border-bottom:25px solid #121212;
+background:#5E002F;}
+.icerik_baslik {text-align:center;
+font-size:300%;
+padding-top:5%;
+font-weight:800;
+color:#666;}
+.metin_1 {color:#666; font-size:100%;padding-left:15%;padding-right:15%; word-spacing:10px;word-wrap:break-word;; }
+@media screen and (max-width: 720px) {
+.menu ul li{ list-style-type:none;
+width:100%;
+float:none;
+color:#333;
+text-align:center;
+}
 }
 </style>
-</HEAD>
-<BODY >
-<div class="ana_baslik">Havalandırma Mağazası</div>
-<div class="menu_alani"><div class="logo"><img src="resimler/LOGO.png" width="60%" style="margin-left:19%;margin-top:10%;"/></div><div class="menu">
+</head>
+<body>
+<div class="baslik_logo"><img src="cssdosyalari/resimler/logo2.png" width="100%"></div>
 
-<ul><br />
-<li>Hakkımızda</li>
-<li>Hizmetler</li>
-<li>Ürünler</li>
-<li>Referanslar</li>
-<li>İletişim</li>
+<div class="menu">
+<ul>
+<li style="color:#86dfe2;border-bottom:1px solid #86dfe2;cursor:pointer" id="ana_sayfa">Anasayfa</li>
+<li style="color:#e75d67;border-bottom:1px solid #e75d67;cursor:pointer" id="muzik">Müzik</li>
+<li style="color:#4ca0c9;border-bottom:1px solid #4ca0c9;cursor:pointer" id="galeri">Galeri</li>
+<li style="color:#95c200;border-bottom:1px solid #95c200;cursor:pointer" width="22%" id="organize">Organizasyonlar</li>
+<li style="color:#f6d500;border-bottom:1px solid #f6d500;cursor:pointer" width="22%" id="hakk">Hakkımızda</li>
 </ul>
-</div></div>
-<div class="orta_resim"></div>
-<div class="icerik"></div>
+
+</div>
+
+
+
+
+
+
+<div class="icerik" id="icerik_1" style="display: none;"><div class="icerik_baslik">Ana Sayfa</div></div>
+<div class="icerik" id="icerik_2" style="display: block;"><div class="icerik_baslik">Müzik</div></div>
+<div class="icerik" id="icerik_3" style="display: none;"><div class="icerik_baslik">Galeri</div></div>
+<div class="icerik" id="icerik_4" style="display: none;"><div class="icerik_baslik">Organizasyonlar</div></div>
+<div class="icerik" id="icerik_5" style="display: none;"><div class="icerik_baslik">Hakkımızda</div>
+<div class="metin_1">
+<p>
+<!--?php
+$sorgu= mysql_query("select * from hakkkimizda");
+$sonuc=mysql_fetch_array($sorgu);
+echo "<h2 style='color:#333;font-size:100%;padding-left:10%;'-->",$sonuc['baslik'],"";
+echo "</p><p class="metin3">",$sonuc['metin'];
+
+?&gt;</p></div></div>
+
 <div class="alt_bolum"></div>
-<div class="alt_bolum2"></div>
-</BODY>
-</HTML>
+
+</body>
