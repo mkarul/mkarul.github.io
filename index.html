@@ -1,59 +1,48 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Osman Naçi</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 
 <script>
     $(document).ready(function () {
-		$(document).scroll(function(){
-    var y=$(document).scrollTop(),
-	header=$(".menu");
-	menn=$("");
-	if (y >= 480) {
-header.addClass('sabitleme');
-menn.addClass('sabitleme2');
-} else {
-header.removeClass('sabitleme');
-menn.removeClass('sabitleme2');
-}
-});
-  $("#icerik_1").show(1000);
-	$("#icerik_2").hide(1000);
+	<!--	$(document).scroll(function(){
+   <!-- var y=$(document).scrollTop(),
+	<!--header=$(".menu");
+	<!--menn=$("");
+	<!--if (y >= 480) {
+<!--header.addClass('sabitleme');
+<!--menn.addClass('sabitleme2');
+<!--} else {
+<!--header.removeClass('sabitleme');
+<!--menn.removeClass('sabitleme2');
+<!--}
+<!--});
+	$("#icerik_2").show(1000);
 	$("#icerik_3").hide(1000); 
 	$("#icerik_4").hide(1000); 
 	$("#icerik_5").hide(1000); 
-
-$("#ana_sayfa").click(function(){ 
-    $("#icerik_1").slideDown(1000);
-	$("#icerik_2").hide(1000);
-	$("#icerik_3").hide(1000); 
-	$("#icerik_4").hide(1000); 
-	$("#icerik_5").hide(1000); 
-	});
 	$("#muzik").click(function(){ 
-    $("#icerik_1").hide(1000);
 	$("#icerik_2").slideDown(1000);
 	$("#icerik_3").hide(1000); 
 	$("#icerik_4").hide(1000); 
 	$("#icerik_5").hide(1000); 
 	});
 	$("#galeri").click(function(){ 
-    $("#icerik_1").hide(1000);
+
 	$("#icerik_2").hide(1000);
 	$("#icerik_3").slideDown(1000); 
 	$("#icerik_4").hide(1000); 
 	$("#icerik_5").hide(1000); 
 	});
 	$("#organize").click(function(){ 
-    $("#icerik_1").hide(1000);
+
 	$("#icerik_2").hide(1000);
 	$("#icerik_3").hide(1000); 
 	$("#icerik_4").slideDown(1000); 
 	$("#icerik_5").hide(1000); 
 	});
 	$("#hakk").click(function(){ 
-    $("#icerik_1").hide(1000);
 	$("#icerik_2").hide(1000);
 	$("#icerik_3").hide(1000); 
 	$("#icerik_4").hide(1000); 
@@ -83,24 +72,26 @@ height:%;
 margin-left:auto;
 margin-right:auto;
 margin-top:10%;}
-.menu {width:80%;
+.menu {width:60%;
 height:%;
 min-height:10%;
+margin-top:5%;
 margin-left:auto;
 margin-right:auto;}
-.menu ul {margin-left:-4.5%;}
+.menu ul {margin-left:0%;
+width:%;
+margin-left:-5.5%;
+}
 .menu ul li{ list-style-type:none;
-width:20%;
+width:25%;
 float:left;
-border-bottom:1px solid black;
-color:#333;
 text-align:center;
 }
-
 .icerik {width:80%;
 height:%;
 margin-left:auto;
 margin-top:10%;
+word-wrap:break-word;
 margin-right:auto;
 border:1px solid #999;}
 .alt_bolum {width:100%;
@@ -114,48 +105,56 @@ font-size:300%;
 padding-top:5%;
 font-weight:800;
 color:#666;}
-.metin_1 {color:#666; font-size:100%;padding-left:15%;padding-right:15%; word-spacing:10px;word-wrap:break-word;; }
-@media only screen and (max-width: 960px) { }
-.menu ul {margin-left:-8%;}
+.metin_1 {  color:#666; font-size:100%;padding-left:15%;padding-right:15%; word-spacing:10px;word-wrap:break-word;; }
+.menu_renk_1 {  color:#e75d67;border-bottom:1px solid #e75d67;cursor:pointer  }
+.menu_renk_2 {  color:#4ca0c9;border-bottom:1px solid #4ca0c9;cursor:pointer  }
+.menu_renk_3 { color:#95c200;border-bottom:1px solid #95c200;cursor:pointer;}
+.menu_renk_4 {  color:#f6d500;border-bottom:1px solid #f6d500;cursor:pointer; }
+@media only screen and (max-width: 960px) { 
+.menu {width:100%;}
+.menu ul {margin-left:-11%;}
 .menu ul li{ list-style-type:none;
 width:100%;
 float:none;
-color:#333;
 text-align:center;
 margin-top:2%;
+font-size:130%;
 }
 .icerik_baslik {text-align:center;
-font-size:150%;
+font-size:100%;
 padding-top:5%;
 font-weight:800;
 color:#666;}
-.baslik_logo{width:75%;
+.baslik_logo{width:60%;
 height:%;
 margin-left:auto;
 margin-right:auto;
-margin-top:10%;}
-.icerik {width:80%;
+margin-top:5%;}
+.icerik {width:98%;
 height:%;
 margin-left:auto;
 margin-top:0%;
 margin-right:auto;
+word-wrap:break-word;
 border:1px solid #999;}
+.menu_renk_1 {  color:#fff;border-bottom:1px solid #e75d67;cursor:pointer;background:#e75d67;  }
+.menu_renk_2 {  color:#fff;border-bottom:1px solid #4ca0c9;cursor:pointer  ;background:#4ca0c9;}
+.menu_renk_3 { color:#fff;border-bottom:1px solid #95c200;cursor:pointer;;background:#95c200;}
+.menu_renk_4 {  color:#fff;border-bottom:1px solid #f6d500;cursor:pointer; ;background:#f6d500;}
+
 }
 
 </style>
 </head>
 <body>
 <div class="baslik_logo"><img src="cssdosyalari/resimler/logo2.png" width="100%"></div>
-
 <div class="menu">
-<ul ">
-<li style="color:#86dfe2;border-bottom:1px solid #86dfe2;cursor:pointer" id="ana_sayfa">Anasayfa</li>
-<li style="color:#e75d67;border-bottom:1px solid #e75d67;cursor:pointer" id="muzik">Müzik</li>
-<li style="color:#4ca0c9;border-bottom:1px solid #4ca0c9;cursor:pointer" id="galeri">Galeri</li>
-<li style="color:#95c200;border-bottom:1px solid #95c200;cursor:pointer" width="22%" id="organize">Organizasyonlar</li>
-<li style="color:#f6d500;border-bottom:1px solid #f6d500;cursor:pointer" width="22%" id="hakk">Hakkımızda</li>
+<ul >
+<li id="muzik" class="menu_renk_1">Müzik</li>
+<li id="galeri" class="menu_renk_2">Galeri</li>
+<li  id="organize" class="menu_renk_3">Organizasyonlar</li>
+<li id="hakk" class="menu_renk_4">Hakkımızda</li>
 </ul>
-
 </div>
 
 
@@ -163,7 +162,6 @@ border:1px solid #999;}
 
 
 
-<div class="icerik" id="icerik_1" style="display: none;"><div class="icerik_baslik">Ana Sayfa</div></div>
 <div class="icerik" id="icerik_2" style="display: block;"><div class="icerik_baslik">Müzik</div></div>
 <div class="icerik" id="icerik_3" style="display: none;"><div class="icerik_baslik">Galeri</div></div>
 <div class="icerik" id="icerik_4" style="display: none;"><div class="icerik_baslik">Organizasyonlar</div></div>
