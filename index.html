@@ -1,181 +1,183 @@
+<?php include("baglanti.php"); ?>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Osman Naçi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<link href="cssdosyalari/resimler/icon.png" rel="shortcut icon">
+<link href="cssdosyalari/stil-2.css" rel="stylesheet"/>
+<title>Osman Naçi Akıncı</title>
+ <link rel="stylesheet" type="text/css" href="plugin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="plugin/jquery-jplayer/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="plugin/ttw-music-player-min.js"></script>
+    
+    <script language="JavaScript">
+function boyutGaleri(){var genislik = 200;var kutuGenislik = $(".galeri").width();var MaxDeger = kutuGenislik / genislik;var imgs = $(".galeri img");var noFoto = imgs.length, OrtDeger, ratio, photo, row, rowPadding, i = 0; while (i < noFoto) {OrtDeger = rowPadding = 0;row = new Array();while (i < noFoto && OrtDeger < MaxDeger) {photo = $(imgs[i]);photo.width("");ratio = photo.width() / photo.height();rowPadding += yatayPad(photo);if(OrtDeger == 0) photo.css("clear", "left"); else photo.css("clear", "none");OrtDeger += ratio;row.push(photo);i++;if(i == noFoto - 1) MaxDeger = 999;}unitWidth = (kutuGenislik - rowPadding) / OrtDeger;row.forEach(function (elem) {elem.width(unitWidth * elem.width() / elem.height());});}}function yatayPad(elem){var padding = 0;var left = elem.css("padding-left");var right = elem.css("padding-right");padding += parseInt(left ? left.replace("px", "") : 0);padding += parseInt(right ? right.replace("px", "") : 0);return padding;}$(window).load(boyutGaleri);$(window).resize(boyutGaleri);
+</script>
 
 <script>
     $(document).ready(function () {
-	<!--	$(document).scroll(function(){
-   <!-- var y=$(document).scrollTop(),
-	<!--header=$(".menu");
-	<!--menn=$("");
-	<!--if (y >= 480) {
-<!--header.addClass('sabitleme');
-<!--menn.addClass('sabitleme2');
-<!--} else {
-<!--header.removeClass('sabitleme');
-<!--menn.removeClass('sabitleme2');
-<!--}
-<!--});
-	$("#icerik_2").show(1000);
-	$("#icerik_3").hide(1000); 
-	$("#icerik_4").hide(1000); 
-	$("#icerik_5").hide(1000); 
-	$("#muzik").click(function(){ 
-	$("#icerik_2").slideDown(1000);
-	$("#icerik_3").hide(1000); 
-	$("#icerik_4").hide(1000); 
-	$("#icerik_5").hide(1000); 
-	});
-	$("#galeri").click(function(){ 
-
-	$("#icerik_2").hide(1000);
-	$("#icerik_3").slideDown(1000); 
-	$("#icerik_4").hide(1000); 
-	$("#icerik_5").hide(1000); 
-	});
-	$("#organize").click(function(){ 
-
-	$("#icerik_2").hide(1000);
-	$("#icerik_3").hide(1000); 
-	$("#icerik_4").slideDown(1000); 
-	$("#icerik_5").hide(1000); 
-	});
-	$("#hakk").click(function(){ 
-	$("#icerik_2").hide(1000);
-	$("#icerik_3").hide(1000); 
-	$("#icerik_4").hide(1000); 
-	$("#icerik_5").slideDown(1000); 
-	})
-
-
-
-
-	});
-		</script>
-<style>
-.sabitleme {
-position:fixed;
-margin-left:auto;
-margin-right:auto;
-top:-5%;
-left:22.5%;
-background-image:url(cssdosyalari/resimler/pattern2.png);}
-.sabitleme2 {position:!important;}
-body {background-image:url(cssdosyalari/resimler/pattern2.png);
-font-family:Arial, Helvetica, sans-serif;
-margin:0px;
-padding:0px;}
-.baslik_logo{width:40%;
-height:%;
-margin-left:auto;
-margin-right:auto;
-margin-top:10%;}
-.menu {width:60%;
-height:%;
-min-height:10%;
-margin-top:5%;
-margin-left:auto;
-margin-right:auto;}
-.menu ul {margin-left:0%;
-width:%;
-margin-left:-5.5%;
+		$(document).scroll(function(){
+    var y=$(document).scrollTop(),
+	header=$(".menu");
+	menn=$("");
+	if (y >= 480) {
+header.addClass('sabitleme');
+menn.addClass('sabitleme2');
+} else {
+header.removeClass('sabitleme');
+menn.removeClass('sabitleme2');
 }
-.menu ul li{ list-style-type:none;
-width:25%;
-float:left;
-text-align:center;
-}
-.icerik {width:80%;
-height:%;
-margin-left:auto;
-margin-top:10%;
-word-wrap:break-word;
-margin-right:auto;
-border:1px solid #999;}
-.alt_bolum {width:100%;
-height:40%;
-margin-top:5%;
-border-top:7px solid #CCC;
-border-bottom:25px solid #121212;
-background:#5E002F;}
-.icerik_baslik {text-align:center;
-font-size:300%;
-padding-top:5%;
-font-weight:800;
-color:#666;}
-.metin_1 {  color:#666; font-size:100%;padding-left:15%;padding-right:15%; word-spacing:10px;word-wrap:break-word;; }
-.menu_renk_1 {  color:#e75d67;border-bottom:1px solid #e75d67;cursor:pointer  }
-.menu_renk_2 {  color:#4ca0c9;border-bottom:1px solid #4ca0c9;cursor:pointer  }
-.menu_renk_3 { color:#95c200;border-bottom:1px solid #95c200;cursor:pointer;}
-.menu_renk_4 {  color:#f6d500;border-bottom:1px solid #f6d500;cursor:pointer; }
-@media only screen and (max-width: 960px) { 
-.menu {width:100%;}
-.menu ul {margin-left:-11%;}
-.menu ul li{ list-style-type:none;
-width:100%;
-float:none;
-text-align:center;
-margin-top:2%;
-font-size:130%;
-}
-.icerik_baslik {text-align:center;
-font-size:100%;
-padding-top:5%;
-font-weight:800;
-color:#666;}
-.baslik_logo{width:60%;
-height:%;
-margin-left:auto;
-margin-right:auto;
-margin-top:5%;}
-.icerik {width:98%;
-height:%;
-margin-left:auto;
-margin-top:0%;
-margin-right:auto;
-word-wrap:break-word;
-border:1px solid #999;}
-.menu_renk_1 {  color:#fff;border-bottom:1px solid #e75d67;cursor:pointer;background:#e75d67;  }
-.menu_renk_2 {  color:#fff;border-bottom:1px solid #4ca0c9;cursor:pointer  ;background:#4ca0c9;}
-.menu_renk_3 { color:#fff;border-bottom:1px solid #95c200;cursor:pointer;;background:#95c200;}
-.menu_renk_4 {  color:#fff;border-bottom:1px solid #f6d500;cursor:pointer; ;background:#f6d500;}
+});
+$(".anadiv").hide();
 
-}
+$("#dur").hide();
+$("#alt").hide();
 
-</style>
+<!--$("#ac").click (function(){
+			$(".anadiv").show();
+	$("#dur").show();
+	$("#alt").show();
+	$("#ac").hide();
+
+	<!--});	
+ });
+</script>
+ <script type="text/javascript">
+
+var myPlaylist1 = [
+
+    {
+        mp3:'mix/1.mp3',
+        oga:'mix/1.ogg',
+        title:'Yeni',
+        artist:'Sample',
+        rating:4,
+        cover:'mix/1.jpg'
+    },
+	  {
+        mp3:'mix/2.mp3',
+        oga:'mix/2.ogg',
+        title:'Yeni',
+        cover:'mix/2.jpg'
+    },
+	  {
+        mp3:'mix/3.mp3',
+        oga:'mix/3.ogg',
+        title:'Yeni',
+        cover:'mix/3.jpg'
+    }
+	,
+	  {
+        mp3:'mix/3.mp3',
+        oga:'mix/3.ogg',
+        title:'Yeni',
+        cover:'mix/3.jpg'
+    }
+	,
+	  {
+        mp3:'mix/3.mp3',
+        oga:'mix/3.ogg',
+        title:'Yeni',
+        cover:'mix/3.jpg'
+    }
+	,
+	  {
+        mp3:'mix/3.mp3',
+        oga:'mix/3.ogg',
+        title:'Yeni',
+        cover:'mix/3.jpg'
+    }
+	,
+	  {
+        mp3:'mix/3.mp3',
+        oga:'mix/3.ogg',
+        title:'Yeni',
+        cover:'mix/3.jpg'
+    }
+	,
+	  {
+        mp3:'mix/3.mp3',
+        oga:'mix/3.ogg',
+        title:'Yeni',
+        cover:'mix/3.jpg'
+    }
+	
+];
+
+        $(document).ready(function(){
+            var description = ' ';
+            $('.muzik').ttwMusicPlayer(myPlaylist1, {
+				
+                autoPlay:false, 
+                description:description,
+               jPlayer:{
+                    swfPath:'../plugin/jquery-jplayer'
+				
+				
+				
+			   }
+            });
+			
+
+		
+        });
+	
+    </script>
 </head>
-<body>
-<div class="baslik_logo"><img src="cssdosyalari/resimler/logo2.png" width="100%"></div>
-<div class="menu">
-<ul >
-<li id="muzik" class="menu_renk_1">Müzik</li>
-<li id="galeri" class="menu_renk_2">Galeri</li>
-<li  id="organize" class="menu_renk_3">Organizasyonlar</li>
-<li id="hakk" class="menu_renk_4">Hakkımızda</li>
-</ul>
+<body >
+<div class="baslik_logo"><img src="cssdosyalari/resimler/logo.png" width="100%"></div>
+<div class="acilis" id="ac"><img src="cssdosyalari/resimler/resim2.png" width="100%"/></div>
+<div class="dur" id="dur"><img src="cssdosyalari/resimler/resim2.png" width="100%"/></div>
+<div class="anadiv">
+<div class="plan">
+
+<div class="tarih">
+<div class="tarih_baslik"><table width="100%"><tr><td>19 Ekip 2017</td><td> 19:05 - 23:00</td></tr></table></div>
+<div class="tarih_bilgil">kasdf ndskaf jnkasld sadşfl sdfnsda nfs dk jnasdf jknf3p92<br> hanskjd as dsad asd asds ada asdsadsadsa asdsad asdasdas asdasd</div>
+</div>
+
+<div class="tarih">
+<div class="tarih_baslik"><table width="100%"><tr><td>19 Ekip 2017</td><td> 19:05 - 23:00</td></tr></table></div>
+<div class="tarih_bilgil">kasdf ndskaf jnkasld sadşfl sdfnsda nfs dk jnasdf jknf3p92<br> hanskjd as dsad asd asds ada asdsadsadsa asdsad asdasdas asdasd</div>
+</div>
+
+<div class="tarih">
+<div class="tarih_baslik"><table width="100%"><tr><td>19 Ekip 2017</td><td> 19:05 - 23:00</td></tr></table></div>
+<div class="tarih_bilgil">kasdf ndskaf jnkasld sadşfl sdfnsda nfs dk jnasdf jknf3p92<br> hanskjd as dsad asd asds ada asdsadsadsa asdsad asdasdas asdasd</div>
+</div>
+
+<div class="tarih">
+<div class="tarih_baslik"><table width="100%"><tr><td>19 Ekip 2017</td><td> 19:05 - 23:00</td></tr></table></div>
+<div class="tarih_bilgil">kasdf ndskaf jnkasld sadşfl sdfnsda nfs dk jnasdf jknf3p92<br> hanskjd as dsad asd asds ada asdsadsadsa asdsad asdasdas asdasd</div>
 </div>
 
 
 
+</div>
+<div class="plan_resmi"><img src="cssdosyalari/resimler/resim.png"  width="60%" style="margin-left:19%;margin-bottom:30%;margin-top:30%;" /><div id="dj"><img  src="cssdosyalari/resimler/resim3.png" width="100%" /></div></div><div class="gec"></div>
 
-
-
-<div class="icerik" id="icerik_2" style="display: block;"><div class="icerik_baslik">Müzik</div></div>
-<div class="icerik" id="icerik_3" style="display: none;"><div class="icerik_baslik">Galeri</div></div>
-<div class="icerik" id="icerik_4" style="display: none;"><div class="icerik_baslik">Organizasyonlar</div></div>
-<div class="icerik" id="icerik_5" style="display: none;"><div class="icerik_baslik">Hakkımızda</div>
-<div class="metin_1">
-<p>
-<!--?php
+<div class="muzik"></div>
+<div class="galeri">
+ <img src="cssdosyalari/resimler/foto_galeri/1.JPG"  />
+ <img src="cssdosyalari/resimler/foto_galeri/2.JPG"  />
+ <img src="cssdosyalari/resimler/foto_galeri/3.JPG"  />
+ <img src="cssdosyalari/resimler/foto_galeri/4.JPG"  />
+ <img src="cssdosyalari/resimler/foto_galeri/5.JPG"  />
+ <img src="cssdosyalari/resimler/foto_galeri/6.JPG"/>
+ <img src="cssdosyalari/resimler/foto_galeri/7.JPG"  />
+<div class="gec"></div>
+<input  class="daha_fazla" type="submit" value="Daha Fazla"/>
+</div>
+<div class="hak">
+<?php
 $sorgu= mysql_query("select * from hakkkimizda");
 $sonuc=mysql_fetch_array($sorgu);
-echo "<h2 style='color:#333;font-size:100%;padding-left:10%;'-->",$sonuc['baslik'],"";
-echo "</p><p class="metin3">",$sonuc['metin'];
-
-?&gt;</p></div></div>
-
-<div class="alt_bolum"></div>
-
+echo "<img src=",$sonuc['baslik_resim']," width='25%' style='margin:3%;float:left;margin-top:0%;'/>";
+echo "<div class='hakkimizda'>",$sonuc['metin'],"</div>"; 
+?>
+</div>
+</div>
+<div class="alt_bolum" id="alt"></div>
 </body>
+</html>
